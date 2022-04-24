@@ -1,0 +1,236 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+    color: #203966;
+    font-family: calibri;
+    font-size: 14px;
+    margin: 0;
+}
+
+main {
+    clear: both;
+}
+
+header {
+    padding: 1%;
+}
+
+nav li {
+    list-style: none;
+    display: inline-block;
+    width: auto;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+main, 
+/* main section, */
+.features {
+    background: #f4f8fd;
+}
+
+header nav {
+    clear: both;
+}
+
+div.main, section.features,
+main + section {
+    clear: both;
+}
+
+section.features {
+    width: 100%;
+    height: auto;
+}
+
+.main section {
+    float: left;
+    width: 50%;
+    /* height: 500px; */
+    /* padding: 0 50% 0 10%; */
+    /* background: url("../devices.jpg") right no-repeat; */
+}
+
+nav {
+    padding: 1% 1% 50px 1%;
+}
+
+nav div {
+    float: left;
+    height: auto;
+    width: 20%;
+}
+
+nav div + div {
+    width: 60%;
+    text-align: center;
+}
+
+nav div:last-child {
+    float: right;
+    text-align: right;
+    width: 20%;
+}
+
+
+
+/* main div {
+    padding-left: 10%;
+    padding-top: 50px;
+} */
+
+.main section {
+    float: left;
+    width: 50%;
+}
+
+.main > section:first-child {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.features {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.main img {
+    width: 100%;
+}
+
+/* .features {
+    margin-right: 5%;
+} */
+
+/* .features {
+    margin: 0 10%;
+} */
+
+.features section {
+    background: #f4f8fd;
+    float: left;
+    width: 25%;
+    padding-bottom: 50px;
+    padding-right: 30px;
+}
+
+.features section:last-child {
+    padding-right: none;
+}
+
+main + section {
+    padding: 50px 10%;
+}
+
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+a {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+header a {
+    font-weight: none;
+    margin-right: 20px;
+}
+
+nav a.source {
+    font-size: 1.3em;
+}
+
+.button {
+    color: white;
+    background: #203966;
+    padding: 10px;
+    width: 70px;
+}
+
+span {
+    font-family: tahoma;
+    color: #6e7b94;
+    font-size: .8em;
+    text-transform: uppercase;
+}
+
+input {
+    font-family: calibri;
+    color: #6e7b94;
+    background: #ebf1fc;
+    border: none;
+    padding: 10px;
+    width: 250px;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 2.7em;
+}
+
+/* media query */
+
+@media screen and (max-width: 393px) {
+    nav > div {
+        width: 100%;
+        text-align: center;
+        padding: 15px;
+        border-bottom: 1px solid gray;
+        margin-bottom: 30px;
+    }
+
+    nav > div + div,
+    nav > div + div + div {
+        display: none;
+    }
+
+    .main section {
+        width: 100%;
+    }
+
+    .features section {
+        width: 100%;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    .button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
