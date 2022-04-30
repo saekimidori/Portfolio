@@ -1,0 +1,239 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+html, body {
+  text-align: center;
+  font-family: calibri;
+}
+
+nav {
+  margin: 0 5%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 20px;
+  width: auto;
+}
+
+nav div {
+  width: 33.3%;
+  float: left;
+}
+
+nav > div {
+  text-align: left;
+}
+
+nav div + div {
+  text-align: center;
+}
+
+nav div:last-child {
+  text-align: right;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "arial narrow";
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 18px;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header, main {
+  background: #66768a;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+main p {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+section {
+  padding: 50px 0;
+}
+
+section {
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+h1 {
+  margin-top: 100px;
+}
+
+.options {
+  margin: 0;
+}
+
+.options div {
+  background: #dbdfe2;
+  float: left;
+  margin: 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 50%;
+}
+
+.options div:first-child {
+  padding-left: 15%;
+  padding-right: 1%;
+}
+
+.options div:last-child {
+  padding-right: 15%;
+  padding-left: 1%;
+}
+
+footer {
+  background: #161f2a;
+  color: white;
+  padding: 30px;
+  text-align: left;
+  height: auto;
+}
+
+footer > div {
+  float: left;
+  margin-bottom: 20px;
+}
+
+footer div + div {
+  float: right;
+  margin-bottom: 20px;
+}
+
+.irs {
+  border-top: 1px solid white;
+  padding: 20px 0;
+  clear: both;
+}
+
+.footerLogo {
+  position: absolute;
+  right: 30px;  
+  display: inline-block;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+/** LINKS **/
+a {
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+header a:last-child {
+  margin-right: 0;
+}
+
+.logo {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.5em;
+}
+
+a.donate {
+  color: black;
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+section a {
+  font-family: "arial narrow";
+  color: black;
+  border: 1px solid black;
+  padding: 10px 50px;
+  display: inline-block;
+}
+
+.options a {
+  
+}
+
+footer a {
+  font-size: .8em;
+  text-transform: none;
+  margin-right: 20px;
+}
+
+/** GENERAL TEXT **/
+
+main p {
+  font-family: "arial narrow";
+  font-size: 1.2em;
+}
+
+span {
+  display: block;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+h2, h4 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.1em;
+}
+
+footer h5, h6 {
+  font-family: calibri;
+  font-size: .8em;
+  margin-bottom: 1px;
+}
+
+.options img {
+  height: auto;
+  width: 80%;
+  box-shadow: 0 0 5px 5px #cfcfcf;
+}
+
+footer h6 {
+  color: #778596;
+}
+
+footer p {
+  font-size: .8em;
+}
