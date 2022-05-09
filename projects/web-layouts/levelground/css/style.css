@@ -26,6 +26,11 @@ html, body {
   font-family: 'Noto Sans', sans-serif;
 }
 
+body {
+  background: 50% 50% / cover no-repeat url('../images/main.jpg');
+  background-attachment: fixed;
+}
+
 nav {
   margin: 0 5%;
 }
@@ -68,10 +73,9 @@ header, main {
   padding-bottom: 4em;
 }
 
-main {
+/* main {
   background: #66768a;
-  background: 50% 73% / cover no-repeat url('../images/main.jpg');
-}
+} */
 
 main p {
   margin-left: 5%;
@@ -79,46 +83,41 @@ main p {
 }
 
 section {
-  padding: 3em 0;
-}
-
-section {
-  margin-left: 30%;
-  margin-right: 30%;
-}
-
-h1 {
-  margin-top: 100px;
-}
-
-.options {
-  margin: 0;
+  padding: 3em 20%;
+  background: #dbdfe2;
 }
 
 /* SECTION WITH CLASSES OR HIRE */
+
+.options {
+  margin: 0;
+  background: none;
+  padding-top: 4em;
+}
+
 .options div {
-  background: #dbdfe2;
   float: left;
   margin: 0;
-  padding-top: 4em;
   padding-bottom: 4em;
   width: 50%;
+  color: white;
+
 }
 
 .options div:first-child {
-  padding-left: 15%;
+  padding-left: 0%;
   padding-right: 1%;
 }
 
 .options div:last-child {
-  padding-right: 15%;
+  padding-right: 0%;
   padding-left: 1%;
 }
 
 /* FOOTER */
 
 footer {
-  background: #161f2a;
+  /* background: #161f2a; */
   color: white;
   padding: 2em;
   padding-bottom: .5em;
@@ -164,6 +163,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  color: #dbdfe2;  
+}
+
 /* LINKS IN HEADER */
 
 header a:last-child {
@@ -182,6 +185,11 @@ a.donate {
   border-radius: 5px;
 }
 
+a.donate:hover {
+  color: black;
+  background: #dbdfe2;
+}
+
 /* LINKS IN SECTIONS */
 
 section a {
@@ -192,10 +200,35 @@ section a {
   display: inline-block;
 }
 
+section a:hover {
+  color: white;
+  border: 1px solid white;
+  background: black;
+}
+
+/* LINKS IN SECTION WITH CLASSES OR HIRE */
+
+.options a {
+  color: white;
+  border: 1px solid white;
+}
+
+.options a:hover {
+  color: black;
+  border: 1px solid #dbdfe2;
+  background: #dbdfe2;
+}
+
+/* LINKS IN FOOTER */
+
 footer a {
   font-size: .7em;
   text-transform: none;
   margin-right: 20px;
+}
+
+footer li a {
+  margin-right: 0;
 }
 
 /* TEXT */
@@ -249,8 +282,50 @@ footer p {
 
 .options img {
   width: 70%;
-  height: 300px;
+  height: 250px;
   object-fit: cover;
   object-position: center;
   box-shadow: 0 0 5px 5px #cfcfcf;
+}
+
+/******************************************
+/* DEVICE RESPONSIVENESS
+/*******************************************/
+
+/* TABLETS */
+
+@media all and (max-width: 1024px) {
+  /* OPTIONS TO HIRE OR VISIT STACK ON TOP */
+  .options div {
+    width: 100%;
+  }
+
+  /* TEXT ADJUSTS TO SCREEN SIZE */
+  h1 {
+    font-size: 5.9vw;
+  }
+
+  p {
+    font-size: 2vw;
+  }
+}
+
+/* MOBILE */
+
+@media all and (max-width: 480px) {
+  /* ONLY LOGO IS SHOWN IN HEADER */
+  nav div:first-child,
+  nav div:last-child {
+    display: none;
+  }
+
+  nav div {
+    width: 100%;
+  }
+
+  .options div {
+    width: 100%;
+  }
+
+
 }
