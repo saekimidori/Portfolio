@@ -3294,8 +3294,9 @@ input, select, textarea {
 			position: relative;
 		}
 
+			/* section guide (vertical line) */
 			#wrapper > section > header:before {
-				background: #e8fff8;
+				background: black;
 				content: '';
 				display: block;
 				margin-top: 1rem;
@@ -3307,8 +3308,9 @@ input, select, textarea {
 				position: relative;
 			}
 
+				/* section guides (horizontal line) */
 				#wrapper > section > header h1:before, #wrapper > section > header h2:before {
-					background: #e8fff8;
+					background: black;
 					content: '';
 					display: block;
 					height: 2px;
@@ -3316,8 +3318,9 @@ input, select, textarea {
 					top: 1rem;
 				}
 
+				/* section guides (dots) */
 				#wrapper > section > header h1:after, #wrapper > section > header h2:after {
-					background: #e8fff8;
+					background: black;
 					border-radius: 0.5rem;
 					content: '';
 					display: block;
@@ -3373,8 +3376,9 @@ input, select, textarea {
 				height: 100%;
 			}
 
+			/* section line guide (last) */
 			#wrapper > section:last-of-type > header:after {
-				background: #e8fff8;
+				background: black;
 				border-radius: 0.5rem;
 				bottom: -1.5rem;
 				content: '';
